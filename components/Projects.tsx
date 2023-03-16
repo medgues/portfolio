@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import React from "react";
 
-import mockup from "../public/mockup.png";
+import mockup from "../public/mockup.webp";
 import AnimatedTextCharacter from "./AnimatedTextCharacter";
 
 type Props = {};
