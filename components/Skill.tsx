@@ -11,7 +11,6 @@ const Skill = ({ directionLeft, Icon }: Props) => {
   return (
     <motion.div
       initial={{ x: directionLeft ? -50 : 50, opacity: 0 }}
-      // animate={{ opacity: 1, x: 0 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 1.5 }}
       className="group relative flex cursor-pointer "

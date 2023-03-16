@@ -10,13 +10,14 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import ContactMe from "@/components/ContactMe";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
+import background from "../public/background.svg";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <div
-      className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-proximity  overflow-y-scroll z-0
+      className=" bg-[url('../public/background.svg')] text-white h-screen snap-y snap-proximity  overflow-y-scroll z-0
     scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80"
     >
       <Head>
