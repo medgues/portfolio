@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import AnimatedTextCharacter from "./AnimatedTextCharacter";
 
-import aboutImage from "../public/description.jpg";
+import aboutImage from "../public/description.webp";
 
 type Props = {};
 

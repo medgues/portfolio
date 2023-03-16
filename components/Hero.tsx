@@ -2,7 +2,7 @@ import React from "react";
 
 import { Cursor, Typewriter, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
-import heroImage from "../public/hero.jpg";
+import heroImage from "../public/hero.webp";
 import Image from "next/image";
 import Link from "next/link";
 
