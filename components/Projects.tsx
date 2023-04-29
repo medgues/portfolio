@@ -11,8 +11,7 @@ type Props = {};
 
 const Projects = (props: Props) => {
   const projects = [
-    {image: hichamPortfolio, title: "Hicham Portfolio" , description:"i added the lit/dark theme feature and created the contact me section to send emails to his emails, also added a new page /inscription for subcribing to his privet course"},
-    {image: mockup1, title: "placeholder" , description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit.Inventore quae beatae modi, quis fugit pariatur non corrupt libero totam sunt, quibusdam vero fugiat unde impedit illumcorporis, iure sint facere."}, 
+    {image: hichamPortfolio, title: "Hicham Portfolio" , description:"i added the lit/dark theme feature and created the contact me section to send emails to his emails, also added a new page /inscription for subcribing to his privet course", repo:'https://github.com/medgues/hicham_Baali_portfolio-', demo:'https://medgues.github.io/hicham_Baali_portfolio-/'}, 
     ];
   return (
     <motion.div
@@ -50,8 +49,8 @@ const Projects = (props: Props) => {
                   />
                   <div className="absolute -bottom-2 opacity-0 group-hover:opacity-80 transition-all duration-500 ease-in-out  z-0">
                     <div className="flex items-center justify-center h-full gap-5">
-                      <button className="projectButton">Repo</button>
-                      <button className="projectButton  ">Demo</button>
+                      <button className="projectButton" onClick={()=>window.open(project.repo)}>Repo</button>
+                      <button className="projectButton " onClick={()=>window.open(project.demo)} >Demo</button>
                     </div>
                   </div>
                 </div>
