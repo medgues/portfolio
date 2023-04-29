@@ -3,13 +3,17 @@ import { motion } from "framer-motion";
 
 import React from "react";
 
-import mockup from "../public/mockup.webp";
+import hichamPortfolio from "../public/hichamPortfolio.webp";
+import mockup1 from "../public/mockup1.webp";
 import AnimatedTextCharacter from "./AnimatedTextCharacter";
 
 type Props = {};
 
 const Projects = (props: Props) => {
-  const projects = [1, 2, 3, 4, 5];
+  const projects = [
+    {image: hichamPortfolio, title: "Hicham Portfolio" , description:"i added the lit/dark theme feature and created the contact me section to send emails to his emails, also added a new page /inscription for subcribing to his privet course"},
+    {image: mockup1, title: "placeholder" , description:"Lorem ipsum, dolor sit amet consectetur adipisicing elit.Inventore quae beatae modi, quis fugit pariatur non corrupt libero totam sunt, quibusdam vero fugiat unde impedit illumcorporis, iure sint facere."}, 
+    ];
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -28,7 +32,7 @@ const Projects = (props: Props) => {
         {projects.map((project, i) => {
           return (
             <div
-              key={project}
+              key={project.title}
               className="w-screen flex-shrink-0 snap-center flex flex-col space-y-3 mt-12 items-center justify-center p-20 md:p-44"
             >
               <motion.div
@@ -40,11 +44,11 @@ const Projects = (props: Props) => {
               >
                 <div className=" relative group flex items-center justify-center">
                   <Image
-                    src={mockup}
+                    src={project.image}
                     alt="project moackup"
-                    className="group-hover:grayscale group-hover:blur aspect-auto lg:w-[40%] xl:w-[40%] xl:mt-10 2xl:w-[10%] transition-all duration-1000 ease-in-out  "
+                    className=" aspect-auto lg:w-[40%] xl:w-[40%] xl:mt-10 2xl:w-[10%] transition-all duration-1000 ease-in-out  "
                   />
-                  <div className="absolute opacity-0 group-hover:opacity-80 transition-all duration-500 ease-in-out h-full w-full  z-0">
+                  <div className="absolute -bottom-2 opacity-0 group-hover:opacity-80 transition-all duration-500 ease-in-out  z-0">
                     <div className="flex items-center justify-center h-full gap-5">
                       <button className="projectButton">Repo</button>
                       <button className="projectButton  ">Demo</button>
@@ -57,14 +61,11 @@ const Projects = (props: Props) => {
                   <span className="underline decoration-[#F7AB0A]">
                     Case Study {i + 1} of {projects.length}
                   </span>{" "}
-                  : StarBucks Clone
+                  : {project.title}
                 </h4>
 
-                <p className="text-base lg:text-lg text-center">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Inventore quae beatae modi, quis fugit pariatur non corrupti
-                  libero totam sunt, quibusdam vero fugiat unde impedit illum
-                  corporis, iure sint facere.
+                <p className="text-base lg:text-lg text-center sm:w-[70%] m-auto w-full">
+                 {project.description}
                 </p>
               </div>
             </div>
