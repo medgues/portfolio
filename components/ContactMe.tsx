@@ -30,7 +30,7 @@ type initialValues = {name?: string, email?: string, subject?: string, message?:
     e.preventDefault();
     emailjs
       .send(
-        "service_cqbsg6m",
+        "service_22rc26p",
         "template_38dqmqp",
         contactParams,
         "BQPCYZsRgVW5kG0OY"

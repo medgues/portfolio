@@ -27,25 +27,32 @@ export default function Header({}: Props) {
       >
         {/* social icons */}
         <SocialIcon
-          url="https://www.linkedin.com/in/med-gues/"
-          fgColor="gray"
+          onClick={()=> window.open("https://www.linkedin.com/in/med-gues/")}
+          network="linkedin"
+          fgColor="currentColor"
           bgColor=" transparent"
+          className="cursor-pointer hoverShadow hover:text-[rgba(247,171,10,50%)] text-gray-500 rounded-full p-2 h-16 w-16 mx-auto object-cover filter group-hover:-translate-y-1 group-hover:scale-125 duration-300 transition ease-in-out"
         />
         <SocialIcon
-          url="https://github.com/medgues"
-          fgColor="gray"
+          onClick={()=> window.open("https://github.com/medgues")}
+          network="github"
+          fgColor="currentColor"
           bgColor="transparent"
+          className="cursor-pointer hoverShadow hover:text-[rgba(247,171,10,50%)] text-gray-500 rounded-full p-2 h-16 w-16 mx-auto object-cover filter group-hover:-translate-y-1 group-hover:scale-125 duration-300 transition ease-in-out"
         />
         <SocialIcon
-          url="https://www.facebook.com/MeDgUes/"
-          fgColor="gray"
+          onClick={()=> window.open("https://www.facebook.com/MeDgUes/")}
+          network="facebook"
+          fgColor="currentColor"
           bgColor="transparent"
+          className="cursor-pointer hoverShadow hover:text-[rgba(247,171,10,50%)] text-gray-500 rounded-full p-2 h-16 w-16 mx-auto object-cover filter group-hover:-translate-y-1 group-hover:scale-125 duration-300 transition ease-in-out"
         />
         <SocialIcon
-          url="+213555406270"
+          onClick={()=> window.open("https://wa.me/+213698179358?text=hey%2C%0Ai%20am%20interested%20in%20your%20services%2C")}
           network="whatsapp"
-          fgColor="gray"
+          fgColor="currentColor"
           bgColor="transparent"
+          className="cursor-pointer hoverShadow hover:text-[rgba(247,171,10,50%)] text-gray-500 rounded-full p-2 h-16 w-16 mx-auto object-cover filter group-hover:-translate-y-1 group-hover:scale-125 duration-300 transition ease-in-out"
         />
       </motion.div>
 
