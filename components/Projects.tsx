@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import React from "react";
 
 import hichamPortfolio from "../public/hichamPortfolio.webp";
+import frontendMentor from '../public/frontend_mentor.webp'
 import mockup1 from "../public/mockup1.webp";
 import AnimatedTextCharacter from "./AnimatedTextCharacter";
 
@@ -12,6 +13,7 @@ type Props = {};
 const Projects = (props: Props) => {
   const projects = [
     {image: hichamPortfolio, title: "Hicham Portfolio" , description:"i added the lit/dark theme feature and created the contact me section to send emails to his emails, also added a new page /inscription for subcribing to his privet course", repo:'https://github.com/medgues/hicham_Baali_portfolio-', demo:'https://medgues.github.io/hicham_Baali_portfolio-/'}, 
+    {image: frontendMentor, title: "intro section with dropdown navigation main" , description:`Frontend Mentor challenge where I built a responsive intro section with dropdown navigation using HTML, CSS, and JavaScript. The goal was to create a pixel-perfect design with optimal layout for different screen sizes and hover states for interactive elements. This project allowed me to practice my web development skills and come up with creative solutions to design problems.`, repo:'https://github.com/medgues/intro-section-with-dropdown-navigation-main', demo:'https://medgues.github.io/intro-section-with-dropdown-navigation-main/'}, 
     ];
   return (
     <motion.div
@@ -56,14 +58,14 @@ const Projects = (props: Props) => {
                 </div>
               </motion.div>
               <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-                <h4 className="text-xl lg:text-4xl font-bold text-center">
+                <h4 className="text-xl lg:text-3xl font-semibold text-center">
                   <span className="underline decoration-[#F7AB0A]">
                     Case Study {i + 1} of {projects.length}
                   </span>{" "}
                   : {project.title}
                 </h4>
 
-                <p className="text-base lg:text-lg text-center sm:w-[70%] m-auto w-full">
+                <p className="text-base lg:text-lg text-center m-auto w-full">
                  {project.description}
                 </p>
               </div>

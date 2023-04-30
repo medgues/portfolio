@@ -26,18 +26,19 @@ const Skills = (props: Props) => {
       <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
         <AnimatedTextCharacter text="skills" />
       </h3>
-      <div className="grid grid-cols-3 md:grid-cols-4 gap-7 ">
-        <Skill directionLeft={true} Icon={DiHtml5} />
-        <Skill directionLeft={true} Icon={DiCss3} />
-        <Skill directionLeft={true} Icon={TbBrandJavascript} />
-        <Skill directionLeft={true} Icon={DiReact} />
-        <Skill directionLeft={false} Icon={DiNodejsSmall} />
-        <Skill directionLeft={false} Icon={DiGit} />
-        <Skill directionLeft={false} Icon={DiGithub} />
-        <Skill directionLeft={false} Icon={DiMongodb} />
+      <div className="grid grid-cols-3 md:grid-cols-4 gap-10 ">
+        <Skill directionLeft={true} Icon={DiHtml5} name={'HTML'} />
+        <Skill directionLeft={true} Icon={DiCss3} name={'CSS'} />
+        <Skill directionLeft={true} Icon={TbBrandJavascript} name={'JavaScript'} />
+        <Skill directionLeft={true} Icon={DiReact} name={'ReactJS'}/>
+        <Skill directionLeft={false} Icon={DiNodejsSmall} name={'NodeJs'} />
+        <Skill directionLeft={false} Icon={DiGit} name={'Git'} />
+        <Skill directionLeft={false} Icon={DiGithub} name={'GitHub'}/>
+        <Skill directionLeft={false} Icon={DiMongodb} name={'MongoDb'}/>
       </div>
     </motion.div>
   );
 };
 
 export default Skills;
+
