@@ -7,6 +7,12 @@ import Link from "next/link";
 type Props = {};
 
 export default function Header({}: Props) {
+
+  const scrollToSection = (sec:string) =>{
+    const section = document.getElementById(sec)
+    section?.scrollIntoView({ behavior: "smooth"})
+    
+  }
   return (
     <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div
@@ -70,6 +76,8 @@ export default function Header({}: Props) {
         transition={{
           duration: 1.5,
         }}
+        onClick={()=>scrollToSection("contact")} 
+        className="cursor-pointer"
       >
         {/* <Link href="#contactme">
         </Link> */}

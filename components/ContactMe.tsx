@@ -44,7 +44,7 @@ type initialValues = {name?: string, email?: string, subject?: string, message?:
       </h3>
       <div className="flex flex-col space-y-5 mt-10 ">
         <h4 className="text-2xl md:text-4xl md:font-semibold text-center">
-          I have got just what you nedd,{" "}
+          I have got just what you need,{" "}
           <span className="decoration-[#f7ab0a]/50 underline">Lets Talk</span>
         </h4>
 

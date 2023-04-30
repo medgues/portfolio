@@ -46,7 +46,7 @@ export default function Home() {
         <Projects />
       </section>
       {/* contact me */}
-      <section id="contactme" className="snap-center">
+      <section id="contact" className="snap-center">
         <ContactMe />
       </section>
       <a href="#hero">

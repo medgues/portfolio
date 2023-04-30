@@ -27,7 +27,7 @@ export default function About({}: Props) {
         <Image
           src={aboutImage}
           alt="hero-image"
-          className="-mb-32 md:mb-0 flex-shrink-0 w-96 h-56 rounded-full object-cover md:rounded-lg md:w-[40rem] md:h-95 xl:w-[1200px] xl:h-[300px]"
+          className="-mb-24 mt-10 md:mb-0 flex-shrink-0 w-96 h-56 rounded-full object-cover md:rounded-lg md:w-[40rem] md:h-95 xl:w-[1200px] xl:h-[300px]"
         />
       </motion.div>
       {/* <motion.img src="../public/description.jpg" /> */}
@@ -35,7 +35,7 @@ export default function About({}: Props) {
       <div className="space-y-10 px-0 md:px-10 ">
         <h4 className="space-y-2 text-4xl font-semibold ">
           Here is a{" "}
-          <span className="underline decoration-[#f7ab01]/50">littel</span>{" "}
+          <span className="underline decoration-[#f7ab01]/50 uppercase">littel</span>{" "}
           background
           <p className="text-base">
             I am a recent graduate of a full-stack web development bootcamp with

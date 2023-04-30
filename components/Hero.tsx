@@ -14,6 +14,11 @@ export default function Hero({}: Props) {
     loop: true,
     delaySpeed: 2000,
   });
+
+  const scrollToSection = (sec:string) =>{
+    const section = document.getElementById(sec)
+    section?.scrollIntoView({ behavior: "smooth"})
+  }
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
@@ -33,18 +38,18 @@ export default function Hero({}: Props) {
         </h1>
 
         <div className="pt-5">
-          <Link href="#about">
-            <button className="heroButton">About</button>
-          </Link>
+          {/* <Link href="#about"> */}
+            <button onClick={()=>scrollToSection("about")} className="heroButton">About</button>
+          {/* </Link> */}
           {/* <Link href="#experiance">
             <button className="heroButton">Experiance</button>
           </Link> */}
-          <Link href="#skills">
-            <button className="heroButton">Skills</button>
-          </Link>
-          <Link href="#projects">
-            <button className="heroButton">Projects</button>
-          </Link>
+          {/* <Link href="#skills"> */}
+            <button onClick={()=>scrollToSection("skills")} className="heroButton">Skills</button>
+          {/* </Link> */}
+          {/* <Link href="#projects"> */}
+            <button onClick={()=>scrollToSection("projects")} className="heroButton">Projects</button>
+          {/* </Link> */}
         </div>
       </div>
     </div>
