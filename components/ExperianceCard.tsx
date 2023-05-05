@@ -32,7 +32,7 @@ const ExperianceCard = (props: Props) => {
           <DiNodejsSmall />
         </div>
         <p className="uppercase py-5 text-gray-300 ">
-         {'6 Monthes : FROM 06/2022 TO 01/2023'}
+         {'6 Months : FROM 06/2022 TO 01/2023'}
         </p>
         <p className="space-y-2 ml-4 text-base">
         The Web Development bootcamp is an immersive program that will make you job-ready full-stack web developers. Learn how to code meaningful applications from scratch using first-class technologies, such as HTML/CSS and NodeJS. The Web Development bootcamp covers Git, HTML, CSS, JavaScript, Node.js, React, and Express. This bootcamp is for new graduates, hard workers and everyone who is aiming for career growth or a career change.

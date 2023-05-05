@@ -17,7 +17,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <div
-      className=" bg-[url('../public/background.svg')] text-white h-screen snap-y snap-proximity  overflow-y-scroll z-0
+      className=" bg-[url('../public/background.svg')] bg-cover text-white h-screen snap-y snap-proximity  overflow-y-scroll z-0
     scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80"
     >
       <Head>

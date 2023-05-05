@@ -47,7 +47,8 @@ export default function Header({}: Props) {
           className="cursor-pointer hoverShadow hover:text-[rgba(247,171,10,50%)] text-gray-500 rounded-full p-2 h-16 w-16 mx-auto object-cover filter group-hover:-translate-y-1 group-hover:scale-125 duration-300 transition ease-in-out"
         />
         <SocialIcon
-          onClick={()=> window.open("https://www.facebook.com/MeDgUes/")}
+          // onClick={()=> window.open("https://www.facebook.com/MeDgUes/")}
+          onClick={()=> window.open(" fb://page/100873834998317")}
           network="facebook"
           fgColor="currentColor"
           bgColor="transparent"
