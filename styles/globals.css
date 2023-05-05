@@ -17,8 +17,34 @@
 }
 
 .hoverShadow:hover {
+  /* color: #7b4ae2; */
   color: #7b4ae2;
   box-shadow: 0 0 20px 5px rgba(247, 172, 10, 50%);
   text-shadow: 0 0 2px #f7ab0a;
+}
+
+.glass{
+  background: rgba( 129, 128, 128, 0.25 );
+box-shadow: 0 8px 32px 0 rgba(247, 172, 10, 50%);
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba(247, 172, 10, 20%);
+}
+.animate{
+  box-shadow: 0 0 0 9px rgba(184, 137, 35, .5);
+animation : profile_animate 8s ease-in-out infinite 0s
+}
+
+@keyframes profile_animate {
+  0%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50%{
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 }
 

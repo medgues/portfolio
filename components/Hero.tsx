@@ -25,7 +25,8 @@ export default function Hero({}: Props) {
       <Image
         src={heroImage}
         alt="hero-image"
-        className="relative rounded-full h-32 w-32 mx-auto object-cover"
+        // className="relative rounded-full h-32 w-32 mx-auto object-cover"
+        className="animate relative mx-auto h-[300px] w-[300px]"
         priority ={true}
       />
       <div className="z-20">
