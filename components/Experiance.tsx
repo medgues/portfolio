@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ExperianceCard from "./ExperianceCard";
+import AnimatedTextCharacter from "./AnimatedTextCharacter";
 
 type Props = {};
 
@@ -13,7 +14,7 @@ function Experiance({}: Props) {
       className="h-screen flex relative overflow-hidden flex-col text-left md:flex-col max-w-full px-0 sm:px-10 justify-evenly mx-auto items-center"
     >
       <h3 className="mt-16 uppercase tracking-[20px] text-gray-500 text-2xl">
-        Experience
+      <AnimatedTextCharacter text="Experience" />
       </h3>
       <div
         className="w-full space-x-5 flex overflow-x-scroll snap-x snap-mendatory

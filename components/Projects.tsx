@@ -3,10 +3,12 @@ import { motion } from "framer-motion";
 
 import React from "react";
 
+import AnimatedTextCharacter from "./AnimatedTextCharacter";
+
 import hichamPortfolio from "../public/hichamPortfolio.webp";
 import frontendMentor from '../public/frontend_mentor.webp'
+import DigitalClock from '../public/clock.webp'
 import mockup1 from "../public/mockup1.webp";
-import AnimatedTextCharacter from "./AnimatedTextCharacter";
 
 type Props = {};
 
@@ -14,6 +16,7 @@ const Projects = (props: Props) => {
   const projects = [
     {image: hichamPortfolio, title: "Hicham Portfolio" , description:"i added the lit/dark theme feature and created the contact me section to send emails to his emails, also added a new page /inscription for subcribing to his privet course", repo:'https://github.com/medgues/hicham_Baali_portfolio-', demo:'https://medgues.github.io/hicham_Baali_portfolio-/'}, 
     {image: frontendMentor, title: "intro section with dropdown navigation main" , description:`Frontend Mentor challenge where I built a responsive intro section with dropdown navigation using HTML, CSS, and JavaScript. The goal was to create a pixel-perfect design with optimal layout for different screen sizes and hover states for interactive elements. This project allowed me to practice my web development skills and come up with creative solutions to design problems.`, repo:'https://github.com/medgues/intro-section-with-dropdown-navigation-main', demo:'https://medgues.github.io/intro-section-with-dropdown-navigation-main/'}, 
+    {image: DigitalClock, title: "Digital Clock" , description:`Degital Clock, made with html css and vanilla javascript`, repo:'https://github.com/medgues/Digital-Clock', demo:'https://medgues.github.io/Digital-Clock/'}, 
     ];
   return (
     <motion.div

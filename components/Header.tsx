@@ -14,7 +14,7 @@ export default function Header({}: Props) {
     
   }
   return (
-    <header className="sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
+    <header className="sticky  bg-[#F7AB0A]/10  top-0 pr-4 rounded-full flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div
         initial={{
           x: -500,
