@@ -1,7 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -10,14 +8,13 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import ContactMe from "@/components/ContactMe";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
-import background from "../public/background.svg";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <div
-      className=" bg-[url('../public/background.svg')] bg-cover text-white h-screen snap-y snap-proximity  overflow-y-scroll z-0
+      className="snap-y snap-proximity bg-[url('../public/background.svg')] bg-cover text-white h-screen overflow-y-scroll z-0
     scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80"
     >
       <Head>
@@ -26,27 +23,27 @@ export default function Home() {
       {/* header */}
       <Header />
       {/* hero */}
-      <section id="hero" className="snap-start pt-5 md:pt-8">
+      <section id="hero" >
         <Hero />
       </section>
       {/* ABOUT */}
-      <section id="about" className="snap-center">
+      <section id="about" >
         <About />
       </section>
       {/* experiance */}
-      <section id="experiance" className="snap-center">
+      <section id="experiance" >
         <Experiance />
       </section>
       {/* skills */}
-      <section id="skills" className="snap-center">
+      <section id="skills">
         <Skills />
       </section>
       {/* projects */}
-      <section id="projects" className="snap-center">
+      <section id="projects" >
         <Projects />
       </section>
       {/* contact me */}
-      <section id="contact" className="snap-center">
+      <section id="contact" className="outline outline-orange-600 snap-always snap-center">
         <ContactMe />
       </section>
       <a href="#hero">

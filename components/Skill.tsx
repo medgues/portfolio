@@ -1,5 +1,4 @@
 import React from "react";
-import { DiReact } from "react-icons/di";
 import { motion } from "framer-motion";
 
 type Props = {

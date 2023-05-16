@@ -1,10 +1,9 @@
 import React from "react";
 
-import { Cursor, Typewriter, useTypewriter } from "react-simple-typewriter";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 import heroImage from "../public/hero.webp";
 import Image from "next/image";
-import Link from "next/link";
 
 type Props = {};
 
@@ -20,12 +19,11 @@ export default function Hero({}: Props) {
     section?.scrollIntoView({ behavior: "smooth"})
   }
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden ">
       <BackgroundCircles />
       <Image
         src={heroImage}
         alt="hero-image"
-        // className="relative rounded-full h-32 w-32 mx-auto object-cover"
         className="animate relative mx-auto h-[300px] w-[300px]"
         priority ={true}
       />
@@ -39,18 +37,10 @@ export default function Hero({}: Props) {
         </h1>
 
         <div className="pt-5">
-          {/* <Link href="#about"> */}
             <button onClick={()=>scrollToSection("about")} className="heroButton">About</button>
-          {/* </Link> */}
-          {/* <Link href="#experiance">
-            <button className="heroButton">Experiance</button>
-          </Link> */}
-          {/* <Link href="#skills"> */}
+            <button onClick={()=>scrollToSection("experiance")} className="heroButton">Experiance</button>
             <button onClick={()=>scrollToSection("skills")} className="heroButton">Skills</button>
-          {/* </Link> */}
-          {/* <Link href="#projects"> */}
             <button onClick={()=>scrollToSection("projects")} className="heroButton">Projects</button>
-          {/* </Link> */}
         </div>
       </div>
     </div>
