@@ -6,7 +6,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        costumeSize1: { raw: "(max-height: 610px),(max-width:1024px)" },
+        costumeSize2: { raw: "(max-height: 768px),(max-width:1024px)" },
+      },
+    },
   },
   plugins: [require("tailwind-scrollbar")],
 };

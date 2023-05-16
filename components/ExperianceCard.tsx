@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { DiJsBadge, DiReact, DiHtml5, DiNodejsSmall } from "react-icons/di";
+import { DiJsBadge, DiReact, DiHtml5, DiNodejsSmall,DiGithub,
+  DiMongodb,DiCss3 } from "react-icons/di";
 
 import heroImage from "../public/code1.webp";
 
@@ -9,7 +10,7 @@ type Props = {};
 
 const ExperianceCard = (props: Props) => {
   return (
-    <article className="glass scale-90  m-auto flex flex-col rounded-lg items-center space-y-5 flex-shrink-0 w-[350px] md:w-[600px] xl:w-[550px] snap-center px-6 py-6 bg-[#292929] hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
+    <article className="glass scale-90  m-auto flex flex-col rounded-lg items-center space-y-5 flex-shrink-0 w-[350px] md:w-[600px] xl:w-[550px] snap-center px-6 py-6 bg-[#292929] opacity-100 sm:hover:opacity-100 sm:opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -26,10 +27,13 @@ const ExperianceCard = (props: Props) => {
       <div className="px-0 md:px-10  ">
         <h4 className="text-3xl font-light">FullStack Web Dev bootcamp</h4>
         <div className="flex space-x-2 my-2">
-          <DiJsBadge />
-          <DiReact />
-          <DiHtml5 />
-          <DiNodejsSmall />
+        <DiGithub />
+        <DiHtml5 />
+        <DiCss3 />
+        <DiJsBadge />
+        <DiReact />
+        <DiNodejsSmall />
+        <DiMongodb />
         </div>
         <p className="uppercase py-5 text-gray-300 ">
          {'6 Months : FROM 06/2022 TO 01/2023'}

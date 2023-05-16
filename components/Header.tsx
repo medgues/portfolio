@@ -14,7 +14,7 @@ export default function Header({}: Props) {
     
   }
   return (
-    <header className="sticky  bg-[#F7AB0A]/10  top-0 pr-4 rounded-full flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
+    <header className="sticky mx-10 sm:mx-24  bg-[#F7AB0A]/10  top-0 px-6 rounded-full flex items-start justify-between max-w-7xl  z-20 xl:items-center">
       <motion.div
         initial={{
           x: -500,
@@ -37,7 +37,7 @@ export default function Header({}: Props) {
           network="linkedin"
           fgColor="currentColor"
           bgColor=" transparent"
-          className="cursor-pointer hoverShadow hover:text-[rgba(247,171,10,50%)] text-gray-500 rounded-full p-2 h-16 w-16 mx-auto object-cover filter group-hover:-translate-y-1 group-hover:scale-125 duration-300 transition ease-in-out"
+          className="cursor-pointer hoverShadow hover:text-[rgba(247,171,10,50%)] text-gray-500 rounded-full pr-2 h-16 w-16 mx-auto object-cover filter group-hover:-translate-y-1 group-hover:scale-125 duration-300 transition ease-in-out"
         />
         <SocialIcon
           onClick={()=> window.open("https://github.com/medgues")}
