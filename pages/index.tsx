@@ -43,7 +43,7 @@ export default function Home() {
         <Projects />
       </section>
       {/* contact me */}
-      <section id="contact" className="outline outline-orange-600 snap-always snap-center">
+      <section id="contact">
         <ContactMe />
       </section>
       <a href="#hero">
