@@ -13,12 +13,12 @@ function Experiance({}: Props) {
       transition={{ duration: 1.5 }}
       className="h-screen flex relative overflow-hidden flex-col text-left md:flex-col max-w-full px-0 sm:px-10 justify-evenly mx-auto items-center "
     >
-      <h3 className="mt-16 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="mt-16 uppercase tracking-[20px] text-gray-500 text-2xl xl:text-5xl">
       <AnimatedTextCharacter text="Experience" />
       </h3>
       <div
         className="w-full space-x-5 flex overflow-x-scroll 
-      scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 "
+      scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 h-4/5lg: h-screen"
       >
         <ExperianceCard />
       </div>

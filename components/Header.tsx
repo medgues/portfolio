@@ -13,7 +13,7 @@ export default function Header({}: Props) {
     
   }
   return (
-    <header className="sticky mx-5 sm:mx-24  bg-[#F7AB0A]/10  top-0 px-6 rounded-full flex items-start justify-between max-w-7xl  z-20 xl:items-center">
+    <header className="sticky mx-5 mt-4 sm:mx-24 w-4/5 px-4 bg-[#F7AB0A]  top-0 px-auto rounded-full flex items-start justify-between max-w-7xl  z-[101] xl:items-center">
       <motion.div
         initial={{
           x: -500,
@@ -36,28 +36,28 @@ export default function Header({}: Props) {
           network="linkedin"
           fgColor="currentColor"
           bgColor=" transparent"
-          className="cursor-pointer  hover:text-[rgba(247,171,10,50%)] text-gray-500 rounded-full pr-2 h-16 w-16 mx-auto object-cover filter hover:-translate-y-1 hover:scale-125 duration-300 transition ease-in-out"
+          className="cursor-pointer  hover:text-gray-600 text-gray-800 rounded-full pr-2 h-16 w-16 mx-auto object-cover filter hover:-translate-y-1 hover:scale-125 duration-300 transition ease-in-out"
         />
         <SocialIcon
           onClick={()=> window.open("https://github.com/medgues")}
           network="github"
           fgColor="currentColor"
           bgColor="transparent"
-          className="cursor-pointer  hover:text-[rgba(247,171,10,50%)] text-gray-500 rounded-full p-2 h-16 w-16 mx-auto object-cover filter hover:-translate-y-1 hover:scale-125 duration-300 transition ease-in-out"
+          className="cursor-pointer  hover:text-gray-600 text-gray-800 rounded-full p-2 h-16 w-16 mx-auto object-cover filter hover:-translate-y-1 hover:scale-125 duration-300 transition ease-in-out"
         />
         <SocialIcon
           onClick={()=> window.open(" fb://page/100873834998317")}
           network="facebook"
           fgColor="currentColor"
           bgColor="transparent"
-          className="cursor-pointer  hover:text-[rgba(247,171,10,50%)] text-gray-500 rounded-full p-2 h-16 w-16 mx-auto object-cover filter hover:-translate-y-1 hover:scale-125 duration-300 transition ease-in-out"
+          className="cursor-pointer  hover:text-gray-600 text-gray-800 rounded-full p-2 h-16 w-16 mx-auto object-cover filter hover:-translate-y-1 hover:scale-125 duration-300 transition ease-in-out"
         />
         <SocialIcon
           onClick={()=> window.open("https://wa.me/+213698179358?text=hey%2C%0Ai%20am%20interested%20in%20your%20services%2C")}
           network="whatsapp"
           fgColor="currentColor"
           bgColor="transparent"
-          className="cursor-pointer  hover:text-[rgba(247,171,10,50%)] text-gray-500 rounded-full p-2 h-16 w-16 mx-auto object-cover filter hover:-translate-y-1 hover:scale-125 duration-300 transition ease-in-out"
+          className="cursor-pointer  hover:text-gray-600 text-gray-800 rounded-full p-2 h-16 w-16 mx-auto object-cover filter hover:-translate-y-1 hover:scale-125 duration-300 transition ease-in-out"
         />
       </motion.div>
 
@@ -76,20 +76,20 @@ export default function Header({}: Props) {
           duration: 1.5,
         }}
         onClick={()=>scrollToSection("contact")} 
-        className="cursor-pointer"
-      >
+        className="cursor-pointer "
+        >
       
 
         <SocialIcon
-          className="cursor-pointer"
-          network="email"
-          fgColor="gray"
+        className="cursor-pointer  hover:text-gray-600 text-gray-800 rounded-full p-2 h-16 w-16 mx-auto object-cover filter hover:-translate-y-1 hover:scale-125 duration-300 transition ease-in-out"
+        network="email"
+          fgColor="currentColor"
           bgColor=" transparent"
         />
+      <span className="uppercase hidden md:inline-flex text-sm text-gray-800">
 
-        <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
           get in touch
-        </p>
+        </span>
       </motion.div>
     </header>
   );

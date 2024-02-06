@@ -23,10 +23,10 @@ const Skills = (props: Props) => {
       transition={{ duration: 1.5 }}
       className="flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center  "
     >
-      <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl xl:text-5xl">
         <AnimatedTextCharacter text="skills" />
       </h3>
-      <div className="grid grid-cols-3 md:grid-cols-4 gap-10 ">
+      <div className="grid grid-cols-3 md:grid-cols-4 gap-10 xl:gap-24">
         <Skill directionLeft={true} Icon={DiHtml5} name={'HTML'} />
         <Skill directionLeft={true} Icon={DiCss3} name={'CSS'} />
         <Skill directionLeft={true} Icon={TbBrandJavascript} name={'JavaScript'} />

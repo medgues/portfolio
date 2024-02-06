@@ -8,14 +8,16 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import ContactMe from "@/components/ContactMe";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
+import { AnimatePresence } from "framer-motion";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
+    <AnimatePresence>
     <div
-      className="snap-y snap-proximity bg-[url('../public/background.svg')] bg-cover text-white h-screen overflow-y-scroll z-0
-    scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80"
+      className="bg-[url('../public/background.svg')] bg-cover text-white h-screen overflow-y-scroll z-0
+    scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 flex flex-col items-center relative overflow-x-hidden"
     >
       <Head>
         <title>Portfolio</title>
@@ -23,25 +25,26 @@ export default function Home() {
       {/* header */}
       <Header />
       {/* hero */}
-      <section id="hero" >
+      <section id="hero" className="mb-20 lg:mb-60">
         <Hero />
       </section>
       {/* ABOUT */}
-      <section id="about" >
+      <section id="about" className="mb-20 lg:mb-60">
         <About />
       </section>
-      {/* experiance */}
-      <section id="experiance" >
-        <Experiance />
-      </section>
-      {/* skills */}
-      <section id="skills">
-        <Skills />
-      </section>
-      {/* projects */}
-      <section id="projects" >
+     {/* projects */}
+     <section id="projects" className="mb-20 lg:mb-60">
         <Projects />
       </section>
+      {/* skills */}
+      <section id="skills" className="mb-20 lg:mb-60">
+        <Skills />
+      </section>
+       {/* experiance */}
+       <section id="experiance" className="mb-20 lg:mb-60">
+        <Experiance />
+      </section>
+      
       {/* contact me */}
       <section id="contact">
         <ContactMe />
@@ -50,5 +53,6 @@ export default function Home() {
         <BsFillArrowUpCircleFill className="absolute bottom-4 right-7 group-hover:text-[rgba(247,171,10,50%)] text-gray-500 bg-[#3e3e3e] rounded-full p-2 h-16 w-16 mx-auto object-cover filter group-hover:-translate-y-1 group-hover:scale-125 duration-300 transition ease-in-out " />
       </a>
     </div>
+    </AnimatePresence>
   );
 }

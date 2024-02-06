@@ -13,11 +13,14 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className=" flex relative flex-col h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center "
+      className=" flex relative  h-screen text-center md:text-left flex-col max-w-7xl px-10 justify-evenly mx-auto items-center "
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl xl:text-5xl">
         <AnimatedTextCharacter text="about" />
       </h3>
+      
+
+      <div className="space-y-10 px-0 md:px-10 flex md:flex-row flex-col gap-12 justify-center items-center">
       <motion.div
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
@@ -26,16 +29,14 @@ export default function About({}: Props) {
         <Image
           src={aboutImage}
           alt="hero-image"
-          className="-mb-24 mt-10 md:mb-0 flex-shrink-0 w-96 h-56 rounded-full object-cover md:rounded-lg md:w-[40rem] md:h-95 xl:w-[1200px] xl:h-[300px]"
+          className="mt-10 md:mb-0 flex-shrink-0 w-96 h-56 rounded-full object-cover md:rounded-lg md:w-[40rem] md:h-95 xl:w-[1040px] xl:h-[489px]"
         />
       </motion.div>
-
-      <div className="space-y-10 px-0 md:px-10 ">
-        <h4 className="space-y-2 text-4xl font-semibold ">
+        <h4 className="space-y-2 text-4xl xl:text-6xl font-semibold xl:w-full xl:h-full">
           Here is a{" "}
           <span className="underline decoration-[#f7ab01]/50 uppercase">littel</span>{" "}
           background
-          <p className="text-base">
+          <p className="text-base xl:text-3xl">
             I am a recent graduate of a full-stack web development bootcamp with
             6 months of experience in developing web applications using modern
             technologies such as HTML, CSS, JavaScript, and various web
