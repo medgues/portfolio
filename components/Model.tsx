@@ -107,16 +107,17 @@ function Modal({ setPopUp, project }: { setPopUp: React.Dispatch<React.SetStateA
             <DiNodejsSmall className=" h-8 w-8" />
             <DiMongodb className=" h-8 w-8" />
           </div>
-          <p className="uppercase py-2 text-gray-300 xl:text-base">
-            {"Project Description"}
-          </p>
-          <p className="space-y-10  text-base font-mono">
-            {project.description}
-          </p>
-          <p className="uppercase py-2 text-gray-300 xl:text-base">{"role"}</p>
-          <p className="space-y-10  text-base font-mono">
-            {project.description}
-          </p>
+          {project?.description?.map((project: any) => (
+            <>
+              <p className="uppercase py-2 text-gray-300 xl:text-base">
+                {project.section}
+              </p>
+              <p className="space-y-10  text-base font-mono">
+                {project.content}
+              </p>
+            </>
+          ))}
+          
         </div>
         <div className=" -bottom-2 transition-all duration-500 ease-in-out  z-0 font-mono">
           <div className="flex items-center justify-center h-full gap-5">
