@@ -97,10 +97,7 @@ function Modal({ setPopUp, project }: { setPopUp: React.Dispatch<React.SetStateA
             })}
           </Splide>
         </motion.div>
-        <div className="px-0 md:px-10  lg:w-4/5 m-auto">
-          <h4 className="text-lg font-light wrap mb-2">Project: {project.title}</h4>
-          <div className=" -bottom-2 transition-all duration-500 ease-in-out  z-0 font-mono">
-          <div className="flex items-center justify-center h-full gap-5">
+        <div className="flex items-center justify-center h-full gap-5 -bottom-2 transition-all duration-500 ease-in-out  z-0 font-mono">
             <button
               className="projectButton"
               onClick={() => window.open(project.repo)}
@@ -114,7 +111,9 @@ function Modal({ setPopUp, project }: { setPopUp: React.Dispatch<React.SetStateA
               Demo
             </button>
           </div>
-        </div>
+        <div className="px-0 md:px-10  lg:w-4/5 m-auto">
+          <h4 className="text-lg font-light wrap mb-2">Project: {project.title}</h4>
+         
          <div className="flex space-x-2 flex-wrap">
             <DiHtml5 className=" h-8 w-8" />
             <DiCss3 className=" h-8 w-8" />
