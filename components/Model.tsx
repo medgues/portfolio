@@ -83,7 +83,7 @@ function Modal({ setPopUp, project }: { setPopUp: React.Dispatch<React.SetStateA
                     className="flex xl:flex-col items-center justify-center h-1/2 md:h-full relative"
                   >
                     <div className=" relative group flex flex-col items-center justify-center h-full">
-                      <img
+                      <Image
                         src={img.link}
                         width={500}
                         height={500}
