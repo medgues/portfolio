@@ -10,7 +10,7 @@ import hichamPortfolio from "../public/hichamPortfolio.webp";
 import frontendMentor from "../public/frontend_mentor.webp";
 import mockup from "../public/mockup1.webp";
 import KamalProject from "../public/KamalProject.webp";
-import KamalProject1 from "../public/kamaleProject/1.jpeg";
+import KamalProject1 from "../public/kamaleProject/KamalProject.webp";
 import KamalProject2 from "../public/kamaleProject/2.jpeg";
 import KamalProject3 from "../public/kamaleProject/3.jpeg";
 import KamalProject4 from "../public/kamaleProject/4.jpeg";
