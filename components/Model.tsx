@@ -83,14 +83,14 @@ function Modal({ setPopUp, project }: { setPopUp: React.Dispatch<React.SetStateA
                     className="flex xl:flex-col items-center justify-center h-1/2 md:h-full relative"
                   >
                     <div className=" relative group flex flex-col items-center justify-center h-full">
-                      <Image
+                      <img
                         src={img.link}
                         width={500}
                         height={500}
                         alt="project moackup"
                         className=" aspect-auto w-[80%]   mt-5 transition-all duration-1000 ease-in-out  rounded-xl "
                       />
-                    </div>
+                      </div>
                   </motion.div>
                 </SplideSlide>
               );
