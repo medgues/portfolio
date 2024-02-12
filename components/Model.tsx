@@ -98,28 +98,8 @@ function Modal({ setPopUp, project }: { setPopUp: React.Dispatch<React.SetStateA
           </Splide>
         </motion.div>
         <div className="px-0 md:px-10  lg:w-4/5 m-auto">
-          <h4 className="text-lg font-light wrap mb-2">{project.title}</h4>
-          <div className="flex space-x-2 flex-wrap">
-            <DiHtml5 className=" h-8 w-8" />
-            <DiCss3 className=" h-8 w-8" />
-            <DiJsBadge className=" h-8 w-8" />
-            <DiReact className=" h-8 w-8" />
-            <DiNodejsSmall className=" h-8 w-8" />
-            <DiMongodb className=" h-8 w-8" />
-          </div>
-          {project?.description?.map((project: any) => (
-            <>
-              <p className="uppercase py-2 text-gray-300 xl:text-base">
-                {project.section}
-              </p>
-              <p className="space-y-10  text-base font-mono">
-                {project.content}
-              </p>
-            </>
-          ))}
-          
-        </div>
-        <div className=" -bottom-2 transition-all duration-500 ease-in-out  z-0 font-mono">
+          <h4 className="text-lg font-light wrap mb-2">Project: {project.title}</h4>
+          <div className=" -bottom-2 transition-all duration-500 ease-in-out  z-0 font-mono">
           <div className="flex items-center justify-center h-full gap-5">
             <button
               className="projectButton"
@@ -135,6 +115,28 @@ function Modal({ setPopUp, project }: { setPopUp: React.Dispatch<React.SetStateA
             </button>
           </div>
         </div>
+         <div className="flex space-x-2 flex-wrap">
+            <DiHtml5 className=" h-8 w-8" />
+            <DiCss3 className=" h-8 w-8" />
+            <DiJsBadge className=" h-8 w-8" />
+            <DiReact className=" h-8 w-8" />
+            <DiNodejsSmall className=" h-8 w-8" />
+            <DiMongodb className=" h-8 w-8" />
+          </div>
+         
+          {project?.description?.map((project: any) => (
+            <>
+              <p className="uppercase py-2 text-gray-300 xl:text-base">
+                {project.section} :
+              </p> 
+              <p className="space-y-10  text-base font-mono">
+                {project.content}
+              </p>
+            </>
+          ))}
+          
+        </div>
+       
       </article>
     </div>
   );
