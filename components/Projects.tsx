@@ -98,7 +98,7 @@ const Projects = (props: Props) => {
     {
       image: hichamPortfolio,
       swiperImgs: [
-        { key: "1", link: "/hichamProject/1.jpeg" },
+        { key: "1", link: "../public/hichamProject/1.jpeg" },
         { key: "2", link: "/hichamProject/2.jpeg" },
         { key: "3", link: "/hichamProject/3.jpeg" },
         { key: "4", link: "/hichamProject/4.jpeg" },
