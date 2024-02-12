@@ -17,7 +17,7 @@ function Experiance({}: Props) {
       <AnimatedTextCharacter text="Experience" />
       </h3>
       <div
-        className="w-full space-x-5 flex overflow-x-scroll 
+        className="w-full space-x-5 flex  
       scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 h-4/5lg: h-screen"
       >
         <ExperianceCard />

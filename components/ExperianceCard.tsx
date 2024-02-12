@@ -10,7 +10,7 @@ type Props = {};
 
 const ExperianceCard = (props: Props) => {
   return (
-    <article className="glass scale-90  m-auto flex flex-col rounded-lg items-center space-y-5 flex-shrink-0 w-[350px] md:w-[600px] xl:w-[600px] px-6 py-6 bg-[#292929] opacity-100 sm:hover:opacity-100 sm:opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden ">
+    <article className="glass scale-90 py-20  m-auto flex flex-col rounded-lg items-center space-y-5 flex-shrink-0 w-[350px] md:w-[600px] xl:w-[600px] px-6 bg-[#292929] opacity-100 sm:hover:opacity-100 sm:opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden ">
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
