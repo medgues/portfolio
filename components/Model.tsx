@@ -12,7 +12,6 @@ import {
   DiCss3,
 } from "react-icons/di";
 const options: Options = {
-  // type: "loop",
   gap: "1rem",
   resetProgress: false,
   drag: "free",
@@ -37,16 +36,16 @@ const options: Options = {
       "flex gap-2 left-0 right-0 px-8 pt-4 sm:pt-0 absolute z-1 justify-center items-center  ",
   },
 };
-function Modal({ setPopUp, project }) {
+function Modal({ setPopUp, project }: { setPopUp: React.Dispatch<React.SetStateAction<boolean>>, project: any }) {
   const wrapperRef = useRef(null);
   useOutsideAlerter(wrapperRef);
-  function useOutsideAlerter(ref) {
+  function useOutsideAlerter(ref: React.RefObject<any>) {
     useEffect(() => {
       /**
        * Alert if clicked on outside of element
        */
-      function handleClickOutside(event) {
-        if (ref.current && !ref.current.contains(event.target)) {
+      function handleClickOutside(event: MouseEvent) {
+        if (ref.current && !ref.current.contains(event.target as Node)) {
           setPopUp(false);
         }
       }
@@ -70,7 +69,7 @@ function Modal({ setPopUp, project }) {
           className="mb-10"
         >
           <Splide aria-label="Projects" className="w-[80%] m-auto" options={options}>
-            {project.swiperImgs.map((img, i) => {
+            {project.swiperImgs.map((img: any, i: number) => {
               return (
                 <SplideSlide
                   key={img.key}

@@ -18,7 +18,7 @@ import Modal from "./Model";
 type Props = {};
 
 const Projects = (props: Props) => {
-  const [popUp, setPopUp] = useState(false)
+  const [popUp, setPopUp] = useState<boolean>(false)
   const [project, setProject] = useState({})
   const options : Options = {
     type: "loop",
