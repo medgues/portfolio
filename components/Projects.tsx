@@ -10,7 +10,7 @@ import hichamPortfolio from "../public/hichamPortfolio.webp";
 import frontendMentor from "../public/frontend_mentor.webp";
 import mockup from "../public/mockup1.webp";
 import KamalProject from "../public/KamalProject.webp";
-import KamalProject1 from "../public/kamaleProject/KamalProject.webp";
+import KamalProject1 from "../public/kamaleProject/1.jpeg";
 import KamalProject2 from "../public/kamaleProject/2.jpeg";
 import KamalProject3 from "../public/kamaleProject/3.jpeg";
 import KamalProject4 from "../public/kamaleProject/4.jpeg";
@@ -19,6 +19,15 @@ import KamalProject6 from "../public/kamaleProject/6.jpeg";
 import KamalProject7 from "../public/kamaleProject/7.jpeg";
 import KamalProject8 from "../public/kamaleProject/8.jpeg";
 import KamalProject9 from "../public/kamaleProject/9.jpeg";
+import HichamProject1 from "../public/hichamProject/1.jpeg";
+import HichamProject2 from "../public/hichamProject/2.jpeg";
+import HichamProject3 from "../public/hichamProject/3.jpeg";
+import HichamProject4 from "../public/hichamProject/4.jpeg";
+import HichamProject5 from "../public/hichamProject/5.jpeg";
+import HichamProject6 from "../public/hichamProject/6.jpeg";
+import HichamProject7 from "../public/hichamProject/7.jpeg";
+import HichamProject8 from "../public/hichamProject/8.jpeg";
+import HichamProject9 from "../public/hichamProject/9.jpeg";
 import resturanetApp from "../public/resturanetApp.webp";
 import DigitalClock from "../public/clock.webp";
 import animatedlogin from "../public/annimatedLogin.webp";
@@ -98,15 +107,15 @@ const Projects = (props: Props) => {
     {
       image: hichamPortfolio,
       swiperImgs: [
-        { key: "1", link: "../public/hichamProject/1.jpeg" },
-        { key: "2", link: "/hichamProject/2.jpeg" },
-        { key: "3", link: "/hichamProject/3.jpeg" },
-        { key: "4", link: "/hichamProject/4.jpeg" },
-        { key: "5", link: "/hichamProject/5.jpeg" },
-        { key: "6", link: "/hichamProject/6.jpeg" },
-        { key: "7", link: "/hichamProject/7.jpeg" },
-        { key: "8", link: "/hichamProject/8.jpeg" },
-        { key: "9", link: "/hichamProject/9.jpeg" },
+        { key: "1", link: HichamProject1 },
+        { key: "2", link: HichamProject2 },
+        { key: "3", link: HichamProject3 },
+        { key: "4", link: HichamProject4  },
+        { key: "5", link: HichamProject5},
+        { key: "6", link: HichamProject6 },
+        { key: "7", link: HichamProject7 },
+        { key: "8", link:HichamProject8},
+        { key: "9", link: HichamProject9 },
       ],
       title: "Customization of Online English Teaching Landing Page",
       description: [
