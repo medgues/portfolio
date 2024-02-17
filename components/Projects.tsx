@@ -8,6 +8,7 @@ import "@splidejs/react-splide/css";
 import AnimatedTextCharacter from "./AnimatedTextCharacter";
 import hichamPortfolio from "../public/hichamPortfolio.webp";
 import frontendMentor from "../public/frontend_mentor.webp";
+import frontendMentor1 from "../introSection/1.jpeg";
 import mockup from "../public/mockup1.webp";
 import KamalProject from "../public/KamalProject.webp";
 import KamalProject1 from "../public/kamaleProject/1.jpeg";
@@ -30,7 +31,11 @@ import HichamProject8 from "../public/hichamProject/8.jpeg";
 import HichamProject9 from "../public/hichamProject/9.jpeg";
 import resturanetApp from "../public/resturanetApp.webp";
 import DigitalClock from "../public/clock.webp";
+import DigitalClock1 from "../degitalClock/1.jpeg";
+import DigitalClock2 from "../degitalClock/2.jpeg";
 import animatedlogin from "../public/annimatedLogin.webp";
+import animatedlogin1 from "../loginSingupPage/1.jpeg";
+import animatedlogin2 from "../loginSingupPage/2.jpeg";
 import Modal from "./Model";
 import { DiCss3, DiHtml5, DiJsBadge, DiReact } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
@@ -160,7 +165,7 @@ const Projects = (props: Props) => {
     },
     {
       image: frontendMentor,
-      swiperImgs: [{ key: "1", link: "/introSection/1.jpeg" }],
+      swiperImgs: [{ key: "1", link: frontendMentor1 }],
       title: "Intro Section ",
       description: [
         {
@@ -196,8 +201,8 @@ const Projects = (props: Props) => {
     {
       image: animatedlogin,
       swiperImgs: [
-        { key: "1", link: "/loginSingupPage/1.jpeg" },
-        { key: "2", link: "/loginSingupPage/2.jpeg" },
+        { key: "1", link: animatedlogin1 },
+        { key: "2", link: animatedlogin2 },
       ],
       title: "Animated Signup/Login Screen",
       description: [
@@ -231,35 +236,42 @@ const Projects = (props: Props) => {
       repo: "https://github.com/medgues/signup-login-page",
       demo: "https://medgues.github.io/signup-login-page/",
     },
-    {image: DigitalClock,swiperImgs:[{key:'1',link: "/degitalClock/1.jpeg"}], title: "Digital Clock" ,description: [
-      {
-        section: "Situation",
-        content:
-          "Seeking to refine my proficiency in web development, I embarked on a project to build a functional digital clock using HTML, CSS, and vanilla JavaScript. ",
-      },
-      {
-        section: "Task",
-        content:
-          "The primary goal was to create a digital clock that accurately displayed the current time and updated dynamically without requiring a page refresh. Through this project, I aimed to deepen my understanding of frontend development principles and improve my JavaScript skills.",
-      },
-      {
-        section: "Action",
-        content:
-          "   I commenced the project by structuring the HTML markup to define the layout of the digital clock interface, ensuring clarity and accessibility. Leveraging CSS, I styled the clock elements to achieve a clean and visually appealing design, optimizing readability and usability. For the core functionality of the clock, I utilized vanilla JavaScript to implement the logic for fetching the current time, updating the display in real-time, and handling any necessary time conversions. By leveraging JavaScript's Date object and built-in methods, I ensured the accuracy and reliability of the clock's timekeeping functionality. Throughout the development process, I adopted a modular and organized approach to coding, adhering to best practices and writing clean, maintainable code. Additionally, I conducted thorough testing to identify and address any bugs or issues, ensuring the smooth and error-free operation of the digital clock.",
-      },
-      {
-        section: "Result",
-        content:
-          " The culmination of this project was a fully functional digital clock built using HTML, CSS, and vanilla JavaScript. The clock accurately displayed the current time and updated dynamically, providing users with a seamless and intuitive experience. By completing this project, I not only honed my skills in frontend development but also gained valuable experience in problem-solving and implementing complex functionality using JavaScript. This project served as a testament to my dedication to continuous learning and improvement in the field of web development.",
-      },
-    ],
-    stack: [
-      { key: 1, icon: <DiHtml5 className=" h-8 w-8" /> },
-      { key: 2, icon: <DiCss3 className=" h-8 w-8" /> },
-      { key: 3, icon: <DiJsBadge className=" h-8 w-8" /> },
-      { key: 5, icon: <SiTailwindcss className=" h-8 w-8" /> },
-    ], repo:'https://github.com/medgues/Digital-Clock', demo:'https://medgues.github.io/Digital-Clock/'},
-        // {image: resturanetApp,swiperImgs:[{key:'1',link: "/kamaleProject/1.jpeg"},{key:'2',link: "/kamaleProject/2.jpeg"}], title: "Delivery App" , description:"I Built a fullstack Food Delivery web application with signup, login, Cart manager, using react, Firebase, vanilla javascript and tailwind-css", repo:'', demo:''},
+    {
+      image: DigitalClock,
+      swiperImgs: [{ key: "1", link: DigitalClock1 }],
+      title: DigitalClock2,
+      description: [
+        {
+          section: "Situation",
+          content:
+            "Seeking to refine my proficiency in web development, I embarked on a project to build a functional digital clock using HTML, CSS, and vanilla JavaScript. ",
+        },
+        {
+          section: "Task",
+          content:
+            "The primary goal was to create a digital clock that accurately displayed the current time and updated dynamically without requiring a page refresh. Through this project, I aimed to deepen my understanding of frontend development principles and improve my JavaScript skills.",
+        },
+        {
+          section: "Action",
+          content:
+            "   I commenced the project by structuring the HTML markup to define the layout of the digital clock interface, ensuring clarity and accessibility. Leveraging CSS, I styled the clock elements to achieve a clean and visually appealing design, optimizing readability and usability. For the core functionality of the clock, I utilized vanilla JavaScript to implement the logic for fetching the current time, updating the display in real-time, and handling any necessary time conversions. By leveraging JavaScript's Date object and built-in methods, I ensured the accuracy and reliability of the clock's timekeeping functionality. Throughout the development process, I adopted a modular and organized approach to coding, adhering to best practices and writing clean, maintainable code. Additionally, I conducted thorough testing to identify and address any bugs or issues, ensuring the smooth and error-free operation of the digital clock.",
+        },
+        {
+          section: "Result",
+          content:
+            " The culmination of this project was a fully functional digital clock built using HTML, CSS, and vanilla JavaScript. The clock accurately displayed the current time and updated dynamically, providing users with a seamless and intuitive experience. By completing this project, I not only honed my skills in frontend development but also gained valuable experience in problem-solving and implementing complex functionality using JavaScript. This project served as a testament to my dedication to continuous learning and improvement in the field of web development.",
+        },
+      ],
+      stack: [
+        { key: 1, icon: <DiHtml5 className=" h-8 w-8" /> },
+        { key: 2, icon: <DiCss3 className=" h-8 w-8" /> },
+        { key: 3, icon: <DiJsBadge className=" h-8 w-8" /> },
+        { key: 5, icon: <SiTailwindcss className=" h-8 w-8" /> },
+      ],
+      repo: "https://github.com/medgues/Digital-Clock",
+      demo: "https://medgues.github.io/Digital-Clock/",
+    },
+    // {image: resturanetApp,swiperImgs:[{key:'1',link: "/kamaleProject/1.jpeg"},{key:'2',link: "/kamaleProject/2.jpeg"}], title: "Delivery App" , description:"I Built a fullstack Food Delivery web application with signup, login, Cart manager, using react, Firebase, vanilla javascript and tailwind-css", repo:'', demo:''},
 
     // {image: mockup,swiperImgs:[{key:'1',link: "/kamaleProject/1.jpeg"},{key:'2',link: "/kamaleProject/2.jpeg"}], title: "Bootcamp Graduation Project" , description:"i added the lit/dark theme feature and created the contact me section to send emails to his emails, also added a new page /inscription for subcribing to his privet course", repo:'https://github.com/medgues/CLA-Graduation-project', demo:'https://cla-graduation-project780.netlify.app'}
   ];
