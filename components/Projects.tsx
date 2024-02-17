@@ -289,7 +289,7 @@ const Projects = (props: Props) => {
         {projects.map((project, i) => {
           return (
             <SplideSlide
-              key={project.title}
+              key={String(project.title)}
               className="flex  flex-col justify-center items-center relative w-full"
             >
               <motion.div
