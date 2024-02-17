@@ -32,7 +32,6 @@ import HichamProject9 from "../public/hichamProject/9.jpeg";
 import resturanetApp from "../public/resturanetApp.webp";
 import DigitalClock from "../public/clock.webp";
 import DigitalClock1 from "../public/degitalClock/1.jpeg";
-import DigitalClock2 from "../public/degitalClock/2.jpeg";
 import animatedlogin from "../public/annimatedLogin.webp";
 import animatedlogin1 from "../public/loginSingupPage/1.jpeg";
 import animatedlogin2 from "../public/loginSingupPage/2.jpeg";
@@ -239,7 +238,7 @@ const Projects = (props: Props) => {
     {
       image: DigitalClock,
       swiperImgs: [{ key: "1", link: DigitalClock1 }],
-      title: DigitalClock2,
+      title: 'Degital Clock',
       description: [
         {
           section: "Situation",
