@@ -115,12 +115,8 @@ function Modal({ setPopUp, project }: { setPopUp: React.Dispatch<React.SetStateA
           <h4 className="text-lg font-light wrap mb-2">Project: {project.title}</h4>
          
          <div className="flex space-x-2 flex-wrap">
-            <DiHtml5 className=" h-8 w-8" />
-            <DiCss3 className=" h-8 w-8" />
-            <DiJsBadge className=" h-8 w-8" />
-            <DiReact className=" h-8 w-8" />
-            <DiNodejsSmall className=" h-8 w-8" />
-            <DiMongodb className=" h-8 w-8" />
+           {project.stack.map((stack: any) => (stack.icon))
+           }
           </div>
          
           {project?.description?.map((project: any) => (

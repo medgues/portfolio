@@ -10,6 +10,10 @@ import {
   DiGithub,
   DiMongodb,
 } from "react-icons/di";
+import { FaAws } from "react-icons/fa";
+import { IoLogoFirebase } from "react-icons/io5";
+
+
 import { TbBrandJavascript } from "react-icons/tb";
 import AnimatedTextCharacter from "./AnimatedTextCharacter";
 
@@ -34,6 +38,8 @@ const Skills = (props: Props) => {
         <Skill directionLeft={false} Icon={DiNodejsSmall} name={'NodeJs'} />
         <Skill directionLeft={false} Icon={DiGit} name={'Git'} />
         <Skill directionLeft={false} Icon={DiGithub} name={'GitHub'}/>
+        <Skill directionLeft={true} Icon={FaAws} name={'AWS'} />
+        <Skill directionLeft={true} Icon={IoLogoFirebase} name={'Firebase'} />
         <Skill directionLeft={false} Icon={DiMongodb} name={'MongoDb'}/>
       </div>
     </motion.div>
