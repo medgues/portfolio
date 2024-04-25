@@ -36,7 +36,13 @@ const options: Options = {
       "flex gap-2 left-0 right-0 px-8 pt-4 sm:pt-0 absolute z-1 justify-center items-center  ",
   },
 };
-function Modal({ setPopUp, project }: { setPopUp: React.Dispatch<React.SetStateAction<boolean>>, project: any }) {
+function Modal({
+  setPopUp,
+  project,
+}: {
+  setPopUp: React.Dispatch<React.SetStateAction<boolean>>;
+  project: any;
+}) {
   const wrapperRef = useRef(null);
   useOutsideAlerter(wrapperRef);
   function useOutsideAlerter(ref: React.RefObject<any>) {
@@ -58,17 +64,22 @@ function Modal({ setPopUp, project }: { setPopUp: React.Dispatch<React.SetStateA
     }, [ref]);
   }
   return (
-    <div
-      className="z-100 w-screen h-screen bg-black bg-opacity-80 fixed top-0 right-0 flex justify-center items-center"
-    >
-      <article  ref={wrapperRef} className="glass w-4/5 lg:w-3/5  h-4/5 m-auto flex flex-col rounded-lg items-center space-y-5 flex-shrink-0 px-6 py-6 bg-[#292929] opacity-100  cursor-pointer transition-opacity duration-200 overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 z-50 ">
+    <div className="z-100 w-screen h-screen bg-black bg-opacity-80 fixed top-0 right-0 flex justify-center items-center">
+      <article
+        ref={wrapperRef}
+        className="glass w-4/5 lg:w-3/5  h-4/5 m-auto flex flex-col rounded-lg items-center space-y-5 flex-shrink-0 px-6 py-6 bg-[#292929] opacity-100  cursor-pointer transition-opacity duration-200 overflow-x-hidden overflow-y-scroll scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 z-50 "
+      >
         <motion.div
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.2 }}
           className="mb-10"
         >
-          <Splide aria-label="Projects" className="w-[80%] m-auto" options={options}>
+          <Splide
+            aria-label="Projects"
+            className="w-[80%] m-auto"
+            options={options}
+          >
             {project.swiperImgs.map((img: any, i: number) => {
               return (
                 <SplideSlide
@@ -79,7 +90,6 @@ function Modal({ setPopUp, project }: { setPopUp: React.Dispatch<React.SetStateA
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1.5 }}
                     viewport={{ once: true }}
-
                     className="flex xl:flex-col items-center justify-center h-1/2 md:h-full relative"
                   >
                     <div className=" relative group flex flex-col items-center justify-center h-full">
@@ -90,7 +100,7 @@ function Modal({ setPopUp, project }: { setPopUp: React.Dispatch<React.SetStateA
                         alt="project moackup"
                         className=" aspect-auto w-[80%]   mt-5 transition-all duration-1000 ease-in-out  rounded-xl "
                       />
-                      </div>
+                    </div>
                   </motion.div>
                 </SplideSlide>
               );
@@ -98,40 +108,40 @@ function Modal({ setPopUp, project }: { setPopUp: React.Dispatch<React.SetStateA
           </Splide>
         </motion.div>
         <div className="flex items-center justify-center h-full gap-5 -bottom-2 transition-all duration-500 ease-in-out  z-0 font-mono">
-            <button
-              className="projectButton"
-              onClick={() => window.open(project.repo)}
-            >
-              Repo
-            </button>
-            <button
-              className="projectButton "
-              onClick={() => window.open(project.demo)}
-            >
-              Demo
-            </button>
-          </div>
+          <button
+            className="projectButton"
+            onClick={() => window.open(project.repo)}
+            disabled={project.repo === true}
+          >
+            Repo
+          </button>
+          <button
+            className="projectButton "
+            onClick={() => window.open(project.demo)}
+          >
+            Demo
+          </button>
+        </div>
         <div className="px-0 md:px-10  lg:w-4/5 m-auto">
-          <h4 className="text-lg font-light wrap mb-2">Project: {project.title}</h4>
-         
-         <div className="flex space-x-2 flex-wrap">
-           {project.stack.map((stack: any) => (stack.icon))
-           }
+          <h4 className="text-lg font-light wrap mb-2">
+            Project: {project.title}
+          </h4>
+
+          <div className="flex space-x-2 flex-wrap">
+            {project.stack.map((stack: any) => stack.icon)}
           </div>
-         
+
           {project?.description?.map((project: any) => (
             <>
               <p className="uppercase py-2 text-gray-300 xl:text-base">
                 {project.section} :
-              </p> 
+              </p>
               <p className="space-y-10  text-base font-mono">
                 {project.content}
               </p>
             </>
           ))}
-          
         </div>
-       
       </article>
     </div>
   );
