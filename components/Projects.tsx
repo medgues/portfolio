@@ -30,6 +30,10 @@ import HichamProject7 from "../public/hichamProject/7.jpeg";
 import HichamProject8 from "../public/hichamProject/8.jpeg";
 import HichamProject9 from "../public/hichamProject/9.jpeg";
 import resturanetApp from "../public/resturanetApp.webp";
+import foodDeliver from "../public/foodDelivery/foodDelivery.jpeg";
+import foodDeliver1 from "../public/foodDelivery/foodDelivery2.jpeg";
+import foodDeliver2 from "../public/foodDelivery/foodDelivery3.jpeg";
+import foodDeliver3 from "../public/foodDelivery/foodDelivery4.jpeg";
 import DigitalClock from "../public/clock.webp";
 import DigitalClock1 from "../public/degitalClock/1.jpeg";
 import animatedlogin from "../public/annimatedLogin.webp";
@@ -114,8 +118,49 @@ const Projects = (props: Props) => {
         { key: 4, icon: <DiReact className=" h-8 w-8" /> },
         { key: 5, icon: <SiTailwindcss className=" h-8 w-8" /> },
       ],
-      repo: "",
-      demo: "https://stg.followmeacademy.com/",
+      repo: true,
+      demo: "https://dev-follow-me-academy-landing-page.web.app/",
+    },
+    {
+      image: resturanetApp,
+      swiperImgs: [
+        { key: "1", link: foodDeliver },
+        { key: "2", link: foodDeliver1 },
+        { key: "3", link: foodDeliver2 },
+        { key: "4", link: foodDeliver3 },
+      ],
+      title: "Food Delivery App",
+      description: [
+        {
+          section: "Situation",
+          content:
+            " Seeking to improve my web development skills, I undertook a project to build a fully functional food delivery app. The goal was to develop an application that combined React-based architecture, Redux for state management, and Firebase for backend integration to create a robust platform for users to order food.",
+        },
+        {
+          section: "Task",
+          content:
+            "The primary task was to design and implement a food delivery application with a seamless user experience, allowing users to browse food items, add them to a cart, and place orders. The app needed to ensure real-time data synchronization for a smooth and responsive interaction. Additionally, secure user authentication was required to maintain user account integrity.",
+        },
+        {
+          section: "Action",
+          content:
+            " I began by setting up the frontend of the application using React with TypeScript, creating reusable components for different sections of the app such as the menu, cart, and checkout. Redux was used for state management to maintain consistent application state across various components. I integrated Firebase for backend services, including real-time data synchronization and user authentication. Throughout the project, I adopted an iterative development approach, testing and refining the application to ensure a seamless user experience. This included optimizing the Redux state management to minimize re-renders and integrating Firebase's real-time database to synchronize data efficiently.",
+        },
+        {
+          section: "Result",
+          content:
+            "The completed food delivery app demonstrated a seamless user experience, with features such as browsing food items, adding to cart, and placing orders. The use of Redux ensured smooth state management, while Firebase provided robust backend services with real-time data synchronization and secure user authentication. This project not only honed my skills in React, TypeScript, and Redux but also showcased my ability to build complex applications with efficient backend integration and a smooth frontend experience.",
+        },
+      ],
+      stack: [
+        { key: 1, icon: <DiHtml5 className=" h-8 w-8" /> },
+        { key: 2, icon: <DiCss3 className=" h-8 w-8" /> },
+        { key: 3, icon: <DiJsBadge className=" h-8 w-8" /> },
+        { key: 4, icon: <DiReact className=" h-8 w-8" /> },
+        { key: 5, icon: <SiTailwindcss className=" h-8 w-8" /> },
+      ],
+      repo: "https://github.com/medgues/delivery-app",
+      demo: "https://restaurantapp-a3ab8.web.app/",
     },
     {
       image: hichamPortfolio,
@@ -238,7 +283,7 @@ const Projects = (props: Props) => {
     {
       image: DigitalClock,
       swiperImgs: [{ key: "1", link: DigitalClock1 }],
-      title: 'Degital Clock',
+      title: "Degital Clock",
       description: [
         {
           section: "Situation",
@@ -270,9 +315,6 @@ const Projects = (props: Props) => {
       repo: "https://github.com/medgues/Digital-Clock",
       demo: "https://medgues.github.io/Digital-Clock/",
     },
-    // {image: resturanetApp,swiperImgs:[{key:'1',link: "/kamaleProject/1.jpeg"},{key:'2',link: "/kamaleProject/2.jpeg"}], title: "Delivery App" , description:"I Built a fullstack Food Delivery web application with signup, login, Cart manager, using react, Firebase, vanilla javascript and tailwind-css", repo:'', demo:''},
-
-    // {image: mockup,swiperImgs:[{key:'1',link: "/kamaleProject/1.jpeg"},{key:'2',link: "/kamaleProject/2.jpeg"}], title: "Bootcamp Graduation Project" , description:"i added the lit/dark theme feature and created the contact me section to send emails to his emails, also added a new page /inscription for subcribing to his privet course", repo:'https://github.com/medgues/CLA-Graduation-project', demo:'https://cla-graduation-project780.netlify.app'}
   ];
   return (
     <motion.div
